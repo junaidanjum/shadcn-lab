@@ -1,0 +1,14 @@
+{
+  "name": "shadcn-lab",
+  "version": "0.1.0",
+  "description": "Dev-only UI playground for shadcn",
+  "bin": {
+    "shadcn-lab": "bin/index.js"
+  },
+  "license": "MIT",
+  "files": [
+    "bin",
+    "templates",
+    "README.md"
+  ]
+}
