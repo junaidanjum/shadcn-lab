@@ -88,6 +88,11 @@ Small, focused PRs are welcome.
 - Optional sections
 - Registry support
 
+## Development notes
+
+The `apps/preview` directory contains a local Next.js app used to preview and maintain the playground templates.
+It is for development only and is not published to npm.
+
 ## Unofficial
 
 This project is **not affiliated with shadcn/ui**.
