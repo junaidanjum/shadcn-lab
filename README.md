@@ -34,13 +34,7 @@ pnpx shadcn-lab
 
 - Next.js (App Router)
 - Tailwind CSS
-- shadcn/ui installed
-
-If components are missing, you’ll see:
-
-```bash
-npx shadcn add button input label
-```
+- shadcn/ui installed (If components are missing, it will guide you to installation.)
 
 ## Usage
 
@@ -50,7 +44,7 @@ Run dev server:
 npm run dev
 ```
 
-Open:
+Open `/playground` route
 
 ```
 http://localhost:3000/playground
@@ -64,6 +58,28 @@ http://localhost:3000/playground
 - Easy to delete
 
 This is a **developer utility**, not a framework.
+
+## Current support
+
+`shadcn-lab` currently includes a playground for:
+
+- Button
+- Input
+More components are coming soon.
+
+## Contributing
+
+This project is intentionally small and opinionated.
+
+If you want to contribute:
+
+- Add new playground sections for shadcn components
+- Keep changes minimal and easy to remove
+- Follow existing structure under `templates/playground`
+
+No complex setup or tooling is expected.
+
+Small, focused PRs are welcome.
 
 ## Roadmap
 
