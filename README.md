@@ -1,6 +1,6 @@
 # shadcn-lab
 
-Dev-only, in-app UI playground for **shadcn/ui** components.
+In-app playground to preview **shadcn/ui** components in your project.
 See what components you have — directly inside your app.
 
 No Storybook. No config. Just a `/playground` page.
@@ -66,6 +66,7 @@ This is a **developer utility**, not a framework.
 - Button
 - Input
 - Accordion
+
 More components are coming soon.
 
 ## Contributing
