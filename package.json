@@ -1,6 +1,6 @@
 {
   "name": "shadcn-lab",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Dev-only UI playground for shadcn",
   "bin": {
     "shadcn-lab": "bin/index.js"
@@ -9,6 +9,7 @@
   "files": [
     "bin",
     "templates",
-    "README.md"
+    "README.md",
+    "CHANGELOG.md"
   ]
 }
