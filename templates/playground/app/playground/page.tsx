@@ -1,4 +1,9 @@
-import { ButtonSection, InputSection, AccordionSection } from "./sections";
+import {
+  ButtonSection,
+  InputSection,
+  AccordionSection,
+  AlertSection,
+} from "./sections";
 
 type Section = {
   id: string;
@@ -44,6 +49,13 @@ const sections: Section[] = [
     description:
       "A vertically stacked set of interactive headings that reveal or hide associated sections of content.",
     Component: AccordionSection,
+  },
+  {
+    id: "alert",
+    title: "Alert",
+    description:
+      "A component used to display important messages or notifications to users, often requiring their attention.",
+    Component: AlertSection,
   },
 ];
 

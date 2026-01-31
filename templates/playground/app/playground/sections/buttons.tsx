@@ -4,7 +4,7 @@ import { Spinner } from "@/components/ui/spinner";
 
 export default function Buttons() {
   return (
-    <section className="space-y-4">
+    <section className="flex flex-col gap-4">
       <h2 className="font-medium">Variants</h2>
       <div className="flex gap-3 flex-wrap">
         <Button>Primary</Button>

@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input";
 
 export default function Inputs() {
   return (
-    <section className="space-y-4">
+    <section className="flex flex-col gap-4">
       <h2 className="font-medium">Variants</h2>
       <div className="flex gap-3 flex-wrap">
         <Field>

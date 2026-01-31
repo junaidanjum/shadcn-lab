@@ -1,6 +1,3 @@
-import { Button } from "@/components/ui/button";
-import { BasicIcon } from "../page";
-import { Spinner } from "@/components/ui/spinner";
 import {
   Accordion,
   AccordionContent,
@@ -31,7 +28,7 @@ const items = [
 
 export default function AccordionSection() {
   return (
-    <section className="space-y-4 w-full">
+    <section className="flex flex-col gap-4 w-full">
       <h2 className="font-medium">Basic </h2>
 
       <Accordion
