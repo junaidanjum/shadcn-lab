@@ -66,6 +66,7 @@ This is a **developer utility**, not a framework.
 - Button
 - Input
 - Accordion
+- Alert
 
 More components are coming soon.
 
