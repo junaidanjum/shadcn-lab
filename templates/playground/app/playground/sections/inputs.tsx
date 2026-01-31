@@ -1,20 +1,33 @@
+import { Field, FieldDescription, FieldLabel } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 
 export default function Inputs() {
   return (
-    <section className="space-y-4 max-w-sm">
-      <h2 className="text-lg font-semibold">Inputs</h2>
-
-      <div className="space-y-2">
-        <Label>Email</Label>
-        <Input placeholder="hello@example.com" />
+    <section className="space-y-4">
+      <h2 className="font-medium">Variants</h2>
+      <div className="flex gap-3 flex-wrap">
+        <Field>
+          <FieldLabel>Basic</FieldLabel>
+          <Input placeholder="Enter text" />
+        </Field>
+        <Field data-disabled>
+          <FieldLabel htmlFor="input-demo-disabled">Disabled</FieldLabel>
+          <Input
+            id="input-demo-disabled"
+            type="email"
+            placeholder="Disabled input"
+            disabled
+          />
+          <FieldDescription>This field is currently disabled.</FieldDescription>
+        </Field>
       </div>
-
-      <div className="space-y-2">
-        <Label>Disabled</Label>
-        <Input disabled placeholder="Disabled input" />
-      </div>
+      <Field data-invalid>
+        <FieldLabel htmlFor="input-invalid">Invalid</FieldLabel>
+        <Input id="input-invalid" placeholder="Error" aria-invalid />
+        <FieldDescription>
+          This field contains validation errors.
+        </FieldDescription>
+      </Field>
     </section>
   );
 }
