@@ -1,5 +1,4 @@
-import Buttons from "./sections/buttons";
-import Inputs from "./sections/inputs";
+import { ButtonSection, InputSection, AccordionSection } from "./sections";
 
 type Section = {
   id: string;
@@ -30,14 +29,21 @@ const sections: Section[] = [
     id: "button",
     title: "Button",
     description: "Displays a button or a component that looks like a button.",
-    Component: Buttons,
+    Component: ButtonSection,
   },
   {
     id: "input",
     title: "Input",
     description:
       "A text input component for forms and user data entry with built-in styling and accessibility features.",
-    Component: Inputs,
+    Component: InputSection,
+  },
+  {
+    id: "accordion",
+    title: "Accordion",
+    description:
+      "A vertically stacked set of interactive headings that reveal or hide associated sections of content.",
+    Component: AccordionSection,
   },
 ];
 
