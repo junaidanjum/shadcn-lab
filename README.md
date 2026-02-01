@@ -67,6 +67,7 @@ This is a **developer utility**, not a framework.
 - Input
 - Accordion
 - Alert
+- Alert Dialog
 
 More components are coming soon.
 

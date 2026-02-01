@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3
+
+- Added Alert Dialog component
+
 ## 0.1.2
 
 - Added Alert component

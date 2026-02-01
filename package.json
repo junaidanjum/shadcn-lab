@@ -1,6 +1,6 @@
 {
   "name": "shadcn-lab",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "In-app playground to preview shadcn/ui components in your project",
   "bin": {
     "shadcn-lab": "bin/index.js"
