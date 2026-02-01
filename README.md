@@ -16,6 +16,7 @@ Docs show components, but not **your** components, with **your** theme.
 - see variants and states
 - build and tweak faster
 
+
 ## Install
 
 ```bash
@@ -49,6 +50,10 @@ Open `/playground` route
 ```
 http://localhost:3000/playground
 ```
+
+## Example
+
+<img width="2000" height="1527" alt="image" src="https://github.com/user-attachments/assets/6b815882-ded6-4f98-834a-99d68342146e" />
 
 ## Philosophy
 
