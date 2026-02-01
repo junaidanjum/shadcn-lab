@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { BasicIcon } from "../page";
+import { PlusIcon } from "../sections/icons";
 import { Spinner } from "@/components/ui/spinner";
 
 export default function Buttons() {
@@ -33,13 +33,13 @@ export default function Buttons() {
       <h2 className="font-medium">Icon</h2>
       <div className="flex gap-3 flex-wrap">
         <Button variant="outline" size="icon">
-          <BasicIcon />
+          <PlusIcon />
         </Button>
         <Button variant="outline">
-          <BasicIcon /> New Branch
+          <PlusIcon /> New Branch
         </Button>
         <Button variant="outline" size="icon" className="rounded-full">
-          <BasicIcon />
+          <PlusIcon />
         </Button>
       </div>
       <br />
