@@ -3,6 +3,7 @@ import AccordionSection from "./accordion";
 import InputSection from "./inputs";
 import AlertSection from "./alert";
 import AlertDialogSection from "./alert-dialog";
+import AvatarSection from "./avatar";
 
 export {
   ButtonSection,
@@ -10,4 +11,5 @@ export {
   InputSection,
   AlertSection,
   AlertDialogSection,
+  AvatarSection,
 };

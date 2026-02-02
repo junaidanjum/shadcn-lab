@@ -4,6 +4,7 @@ import {
   AccordionSection,
   AlertSection,
   AlertDialogSection,
+  AvatarSection,
 } from "./sections";
 
 type Section = {
@@ -47,6 +48,13 @@ const sections: Section[] = [
     description:
       "A modal dialog that interrupts the user's workflow to communicate an important message and requires a response.",
     Component: AlertDialogSection,
+  },
+  {
+    id: "avatar",
+    title: "Avatar",
+    description:
+      "A graphical representation of a user or entity, often displayed as a profile picture or icon.",
+    Component: AvatarSection,
   },
 ];
 
