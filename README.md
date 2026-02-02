@@ -70,9 +70,10 @@ This is a **developer utility**, not a framework.
 
 - Button
 - Input
-- Accordion
-- Alert
-- Alert Dialog
+- Accordion (v0.1.1)
+- Alert (v0.1.2)
+- Alert Dialog (v0.1.3)
+- Avatar (v0.1.4)
 
 More components are coming soon.
 

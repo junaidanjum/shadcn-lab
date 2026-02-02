@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.4
+
+- Added Avatar component
+
 ## 0.1.3
 
 - Added Alert Dialog component
