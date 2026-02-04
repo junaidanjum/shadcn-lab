@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.5
+
+- Added Badge component
+
 ## 0.1.4
 
 - Added Avatar component
