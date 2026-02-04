@@ -5,6 +5,7 @@ import {
   AlertSection,
   AlertDialogSection,
   AvatarSection,
+  BadgeSection,
 } from "./sections";
 
 type Section = {
@@ -55,6 +56,13 @@ const sections: Section[] = [
     description:
       "A graphical representation of a user or entity, often displayed as a profile picture or icon.",
     Component: AvatarSection,
+  },
+  {
+    id: "badge",
+    title: "Badge",
+    description:
+      "A small visual indicator used to display status, counts, or labels associated with an item or component.",
+    Component: BadgeSection,
   },
 ];
 

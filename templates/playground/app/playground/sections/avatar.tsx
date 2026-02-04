@@ -135,7 +135,7 @@ export default function AvatarSection() {
         </Avatar>
       </div>
       <br />
-      <h2>Dropdown</h2>
+      <h2 className="font-medium">Dropdown</h2>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="ghost" size="icon" className="rounded-full">

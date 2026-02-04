@@ -4,6 +4,7 @@ import InputSection from "./inputs";
 import AlertSection from "./alert";
 import AlertDialogSection from "./alert-dialog";
 import AvatarSection from "./avatar";
+import BadgeSection from "./badge";
 
 export {
   ButtonSection,
@@ -12,4 +13,5 @@ export {
   AlertSection,
   AlertDialogSection,
   AvatarSection,
+  BadgeSection,
 };
