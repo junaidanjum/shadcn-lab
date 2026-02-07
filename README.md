@@ -5,6 +5,8 @@ See what components you have — directly inside your app.
 
 No Storybook. No config. Just a `/playground` page.
 
+[![npm version](https://img.shields.io/npm/v/shadcn-lab)](https://www.npmjs.com/package/shadcn-lab)
+
 ## Why
 
 shadcn/ui is code-first.
