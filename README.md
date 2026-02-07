@@ -75,6 +75,7 @@ This is a **developer utility**, not a framework.
 - Alert Dialog (v0.1.3)
 - Avatar (v0.1.4)
 - Badge (v0.1.5)
+- Breadcrumb (v0.1.6)
 
 More components are coming soon.
 
