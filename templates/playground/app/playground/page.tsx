@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import {
   ButtonSection,
   InputSection,
@@ -6,7 +7,9 @@ import {
   AlertDialogSection,
   AvatarSection,
   BadgeSection,
+  BreadcrumbSection,
 } from "./sections";
+import { Github } from "lucide-react";
 
 type Section = {
   id: string;
@@ -64,6 +67,13 @@ const sections: Section[] = [
       "A small visual indicator used to display status, counts, or labels associated with an item or component.",
     Component: BadgeSection,
   },
+  {
+    id: "breadcrumb",
+    title: "Breadcrumb",
+    description:
+      "Displays the path to the current resource using a hierarchy of links.",
+    Component: BreadcrumbSection,
+  },
 ];
 
 export default function PlaygroundPage() {
@@ -74,15 +84,13 @@ export default function PlaygroundPage() {
       {/* Sidebar */}
       <aside className="w-56 border-r px-6 py-12 text-sm overflow-y-auto">
         <div className="mb-4 font-semibold">Components</div>
-        <nav className="space-y-2">
+        <nav className="flex flex-col gap-1">
           {sections.map((s) => (
-            <a
-              key={s.id}
-              href={`#${s.id}`}
-              className="block text-muted-foreground hover:text-foreground"
-            >
-              {s.title}
-            </a>
+            <div key={s.id}>
+              <Button variant="ghost" size="sm" asChild>
+                <a href={`#${s.id}`}>{s.title}</a>
+              </Button>
+            </div>
           ))}
         </nav>
       </aside>
@@ -90,7 +98,16 @@ export default function PlaygroundPage() {
       {/* Content */}
       <main className="flex-1 px-8 py-10 space-y-20 overflow-y-auto">
         <div>
-          <h1 className="text-3xl font-bold tracking-tighter">shadcn-lab</h1>
+          <h1 className="text-3xl font-bold tracking-tighter flex items-center gap-3">
+            shadcn-lab
+            <a
+              target="_blank"
+              href="https://github.com/junaidanjum/shadcn-lab"
+              className="text-muted-foreground"
+            >
+              <Github size={16} />
+            </a>
+          </h1>
           <p className="text-sm text-muted-foreground">UI playground</p>
         </div>
 

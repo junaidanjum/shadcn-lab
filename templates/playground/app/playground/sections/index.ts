@@ -5,6 +5,7 @@ import AlertSection from "./alert";
 import AlertDialogSection from "./alert-dialog";
 import AvatarSection from "./avatar";
 import BadgeSection from "./badge";
+import BreadcrumbSection from "./breadcrumb";
 
 export {
   ButtonSection,
@@ -14,4 +15,5 @@ export {
   AlertDialogSection,
   AvatarSection,
   BadgeSection,
+  BreadcrumbSection,
 };
