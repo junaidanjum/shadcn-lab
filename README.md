@@ -78,6 +78,8 @@ This is a **developer utility**, not a framework.
 - Avatar (v0.1.4)
 - Badge (v0.1.5)
 - Breadcrumb (v0.1.6)
+- Card (v0.1.7)
+- Tabs (v0.1.7)
 
 More components are coming soon.
 

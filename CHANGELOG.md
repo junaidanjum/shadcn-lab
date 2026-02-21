@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.7
+
+- Added Tabs component
+- Added Card component
+
 ## 0.1.6
 
 - Added Breadcrumb component
