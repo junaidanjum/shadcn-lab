@@ -6,6 +6,8 @@ import AlertDialogSection from "./alert-dialog";
 import AvatarSection from "./avatar";
 import BadgeSection from "./badge";
 import BreadcrumbSection from "./breadcrumb";
+import CardSection from "./card";
+import TabsSection from "./tabs";
 
 export {
   ButtonSection,
@@ -16,4 +18,6 @@ export {
   AvatarSection,
   BadgeSection,
   BreadcrumbSection,
+  CardSection,
+  TabsSection,
 };

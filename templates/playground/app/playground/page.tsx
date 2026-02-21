@@ -8,6 +8,8 @@ import {
   AvatarSection,
   BadgeSection,
   BreadcrumbSection,
+  CardSection,
+  TabsSection,
 } from "./sections";
 import { Github } from "lucide-react";
 
@@ -73,6 +75,20 @@ const sections: Section[] = [
     description:
       "Displays the path to the current resource using a hierarchy of links.",
     Component: BreadcrumbSection,
+  },
+  {
+    id: "card",
+    title: "Card",
+    description:
+      "Displays content and actions in a bordered container with an optional header and footer.",
+    Component: CardSection,
+  },
+  {
+    id: "tabs",
+    title: "Tabs",
+    description:
+      "Organizes related content into separate views where only one panel is visible at a time.",
+    Component: TabsSection,
   },
 ];
 
