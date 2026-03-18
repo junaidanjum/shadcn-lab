@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.8
+
+- Added Dialog component
+- Added Select component
+- Added Switch component
+- Added Tooltip component
+- Added Checkbox component
+
 ## 0.1.7
 
 - Added Tabs component

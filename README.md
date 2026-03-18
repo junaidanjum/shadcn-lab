@@ -80,6 +80,11 @@ This is a **developer utility**, not a framework.
 - Breadcrumb (v0.1.6)
 - Card (v0.1.7)
 - Tabs (v0.1.7)
+- Dialog (v0.1.8)
+- Select (v0.1.8)
+- Switch (v0.1.8)
+- Tooltip (v0.1.8)
+- Checkbox (v0.1.8)
 
 More components are coming soon.
 

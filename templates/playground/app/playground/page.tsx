@@ -10,6 +10,11 @@ import {
   BreadcrumbSection,
   CardSection,
   TabsSection,
+  DialogSection,
+  SelectSection,
+  SwitchSection,
+  TooltipSection,
+  CheckboxSection,
 } from "./sections";
 import { Github } from "lucide-react";
 
@@ -89,6 +94,41 @@ const sections: Section[] = [
     description:
       "Organizes related content into separate views where only one panel is visible at a time.",
     Component: TabsSection,
+  },
+  {
+    id: "dialog",
+    title: "Dialog",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response.",
+    Component: DialogSection,
+  },
+  {
+    id: "select",
+    title: "Select",
+    description:
+      "Displays a list of options for the user to pick from, triggered by a button.",
+    Component: SelectSection,
+  },
+  {
+    id: "switch",
+    title: "Switch",
+    description:
+      "A toggle control that allows the user to switch between two states like on and off.",
+    Component: SwitchSection,
+  },
+  {
+    id: "tooltip",
+    title: "Tooltip",
+    description:
+      "A popup that displays information related to an element when it receives keyboard focus or the mouse hovers over it.",
+    Component: TooltipSection,
+  },
+  {
+    id: "checkbox",
+    title: "Checkbox",
+    description:
+      "A control that allows the user to toggle between checked and unchecked states.",
+    Component: CheckboxSection,
   },
 ];
 

@@ -8,6 +8,11 @@ import BadgeSection from "./badge";
 import BreadcrumbSection from "./breadcrumb";
 import CardSection from "./card";
 import TabsSection from "./tabs";
+import DialogSection from "./dialog";
+import SelectSection from "./select";
+import SwitchSection from "./switch";
+import TooltipSection from "./tooltip";
+import CheckboxSection from "./checkbox";
 
 export {
   ButtonSection,
@@ -20,4 +25,9 @@ export {
   BreadcrumbSection,
   CardSection,
   TabsSection,
+  DialogSection,
+  SelectSection,
+  SwitchSection,
+  TooltipSection,
+  CheckboxSection,
 };
