@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.2.0
+
+**Breaking change.** Migrated from a custom CLI to a shadcn registry.
+
+- Install command changed:
+  - Old: `pnpx shadcn-lab`
+  - New: `npx shadcn@latest add https://shadcn-lab.vercel.app/r/playground.json`
+- Playground now lands as a single `app/playground/page.tsx` file (previously 18 files under `app/playground/`)
+- Removed the `shadcn-lab` CLI binary (`bin/index.js`)
+- Missing shadcn components are installed automatically by the shadcn CLI
+
 ## 0.1.8
 
 - Added Dialog component
