@@ -813,26 +813,6 @@ function CardSection() {
       </Card>
 
       <br />
-      <h2 className="font-medium">Size</h2>
-      <Card size="sm" className="w-full max-w-md">
-        <CardHeader>
-          <CardTitle>Small Card</CardTitle>
-          <CardDescription>
-            This card uses the small size variant.
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <p className="text-sm text-muted-foreground">
-            The card component supports a size prop that can be set to
-            &quot;sm&quot; for a more compact appearance.
-          </p>
-        </CardContent>
-        <CardFooter className="justify-end">
-          <Button size="sm">Action</Button>
-        </CardFooter>
-      </Card>
-
-      <br />
       <h2 className="font-medium">Image</h2>
       <Card className="w-full max-w-md overflow-hidden pt-0">
         <img
