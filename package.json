@@ -1,13 +1,12 @@
 {
   "name": "shadcn-lab",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "description": "In-app playground to preview shadcn/ui components in your project",
-  "bin": {
-    "shadcn-lab": "bin/index.js"
-  },
   "license": "MIT",
+  "scripts": {
+    "build:registry": "node scripts/build-registry.mjs"
+  },
   "files": [
-    "bin",
     "templates",
     "README.md",
     "CHANGELOG.md"

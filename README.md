@@ -3,7 +3,7 @@
 In-app playground to preview **shadcn/ui** components in your project.
 See what components you have — directly inside your app.
 
-No Storybook. No config. Just a `/playground` page.
+No Storybook. No config. **Just one file.**
 
 [![npm version](https://img.shields.io/npm/v/shadcn-lab)](https://www.npmjs.com/package/shadcn-lab)
 
@@ -18,26 +18,28 @@ Docs show components, but not **your** components, with **your** theme.
 - see variants and states
 - build and tweak faster
 
-
 ## Install
 
+`shadcn-lab` ships as a [shadcn registry](https://ui.shadcn.com/docs/registry). Use the official `shadcn` CLI:
+
 ```bash
-pnpx shadcn-lab
+npx shadcn@latest add https://shadcn-lab.vercel.app/r/playground.json
 ```
+
+That's it. One file lands at `app/playground/page.tsx` (or `src/app/playground/page.tsx` if you use `src/`). Missing shadcn components are installed automatically.
 
 ## What it does
 
-- Detects Next.js App Router (`app/` or `src/app`)
-- Adds `/playground` route
-- Uses real shadcn components
+- Adds a single `app/playground/page.tsx` file
+- Uses your real shadcn components
 - Disabled automatically in production
-- Warns if required components are missing
+- Pulls in any missing components via the shadcn CLI
 
 ## Requirements
 
 - Next.js (App Router)
 - Tailwind CSS
-- shadcn/ui installed (If components are missing, it will guide you to installation.)
+- shadcn/ui set up (`components.json` present)
 
 ## Usage
 
@@ -47,7 +49,7 @@ Run dev server:
 npm run dev
 ```
 
-Open `/playground` route
+Open `/playground`:
 
 ```
 http://localhost:3000/playground
@@ -60,9 +62,10 @@ http://localhost:3000/playground
 ## Philosophy
 
 - Zero magic
+- One file
 - No config mutation
-- No auto-installs
-- Easy to delete
+- No auto-installs (the shadcn CLI handles deps explicitly)
+- Easy to delete (`rm app/playground/page.tsx`)
 
 This is a **developer utility**, not a framework.
 
@@ -72,19 +75,19 @@ This is a **developer utility**, not a framework.
 
 - Button
 - Input
-- Accordion (v0.1.1)
-- Alert (v0.1.2)
-- Alert Dialog (v0.1.3)
-- Avatar (v0.1.4)
-- Badge (v0.1.5)
-- Breadcrumb (v0.1.6)
-- Card (v0.1.7)
-- Tabs (v0.1.7)
-- Dialog (v0.1.8)
-- Select (v0.1.8)
-- Switch (v0.1.8)
-- Tooltip (v0.1.8)
-- Checkbox (v0.1.8)
+- Accordion
+- Alert
+- Alert Dialog
+- Avatar
+- Badge
+- Breadcrumb
+- Card
+- Tabs
+- Dialog
+- Select
+- Switch
+- Tooltip
+- Checkbox
 
 More components are coming soon.
 
@@ -94,9 +97,9 @@ This project is intentionally small and opinionated.
 
 If you want to contribute:
 
-- Add new playground sections for shadcn components
+- Add new section components to `templates/playground/app/playground/page.tsx`
+- Run `npm run build:registry` to regenerate `apps/preview/public/r/playground.json`
 - Keep changes minimal and easy to remove
-- Follow existing structure under `templates/playground`
 
 No complex setup or tooling is expected.
 
@@ -107,12 +110,17 @@ Small, focused PRs are welcome.
 - More components
 - Better grouping
 - Optional sections
-- Registry support
+- Per-component registry entries
 
 ## Development notes
 
-The `apps/preview` directory contains a local Next.js app used to preview and maintain the playground templates.
-It is for development only and is not published to npm.
+The `apps/preview` directory is a local Next.js app used to preview and maintain the playground template. It also hosts the registry endpoint at `/r/playground.json`. It is for development only and is not published to npm.
+
+To regenerate the registry after editing the template:
+
+```bash
+npm run build:registry
+```
 
 ## Unofficial
 
